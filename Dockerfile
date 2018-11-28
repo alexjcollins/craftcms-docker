@@ -13,7 +13,7 @@ apt-get update && \
 apt-get install -y postgresql-client-10
 
 # Create Craft project
-RUN composer create-project craftcms/craft:^3.1.0-beta.1 /usr/share/nginx/
+RUN composer create-project craftcms/craft:dev-3.1 /usr/share/nginx/
 
 RUN composer update
 
