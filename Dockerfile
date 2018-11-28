@@ -15,8 +15,6 @@ apt-get install -y postgresql-client-10
 # Create Craft project
 RUN composer create-project craftcms/craft "^3.1.0-beta.1" /usr/share/nginx/
 
-RUN composer update
-
 # Install the yii2-redis library
 RUN composer require --prefer-dist yiisoft/yii2-redis -d /usr/share/nginx/
 
